@@ -1,0 +1,8 @@
+rules:
+  - id: eqeq-always-true
+    patterns:
+      - pattern: $X == $X
+      - pattern-not: 0 == 0
+    message: "$X == $X is always true"
+    languages: [python]
+    severity: ERROR
